@@ -1,5 +1,7 @@
 import flet as ft
 
+#testando git
+
 def main(page: ft.Page):
     page.title = "Academia"
 
