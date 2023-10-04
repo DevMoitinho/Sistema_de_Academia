@@ -46,6 +46,13 @@ def lerBD():
         usuarios[i].altura = alunos[x][8]
         x+=1
 
+def login(mat, senha):
+    if mat not in usuarios:
+        print('Aluno não cadastrado!')
+    else:
+        print(usuarios[mat].nome)
+
+
 def novoAluno():
     #COLOCANDO DADOS NO BANCO
     banco= sqlite3.connect("Banco_de_Dados.db")
